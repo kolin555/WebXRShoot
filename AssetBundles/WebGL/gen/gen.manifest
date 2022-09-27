@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 4035086951
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: environment
+      Dependencies:
+        Dependency_0: materials
+    Info_1:
+      Name: materials
+      Dependencies: {}
+    Info_2:
+      Name: skybox
+      Dependencies: {}
+    Info_3:
+      Name: maps/variants/assets.hd
+      Dependencies: {}
+    Info_4:
+      Name: allmodels
+      Dependencies:
+        Dependency_0: materials
+    Info_5:
+      Name: scene
+      Dependencies:
+        Dependency_0: environment
+        Dependency_1: materials
+        Dependency_2: skybox
+        Dependency_3: allmodels
+        Dependency_4: model/tower
+        Dependency_5: model/interactables
+    Info_6:
+      Name: maps/sample/samplescene
+      Dependencies: {}
+    Info_7:
+      Name: model/tower
+      Dependencies:
+        Dependency_0: materials
+    Info_8:
+      Name: maps/variants/variantscene
+      Dependencies:
+        Dependency_0: maps/variants/assets.hd
+    Info_9:
+      Name: model/interactables
+      Dependencies:
+        Dependency_0: materials
+    Info_10:
+      Name: maps/variants/assets.sd
+      Dependencies: {}

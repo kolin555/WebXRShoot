@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3823558698
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 28168499cf5d397ac031cce0197439d2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1565cf67db937607d472027849a1cef2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/LoxodonFramework/BundleExamples/Maps/Variants/Assets-SD/Logo.png
+- Assets/LoxodonFramework/BundleExamples/Maps/Variants/Assets-SD/Texture.png
+- Assets/LoxodonFramework/BundleExamples/Maps/Variants/Assets-SD/Material.mat
+Dependencies: []

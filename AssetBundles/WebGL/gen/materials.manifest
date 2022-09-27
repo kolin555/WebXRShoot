@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 4124791096
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2be1887d9f9c738f61ff795ee765104f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a1b8ae978d101eec5d12a49988ba7adf
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/New Material.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Red.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Blue.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Green.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Pink.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Ground.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Yellow.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/TransparentTest.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/cube-sea.mat
+- Assets/GrassShaderGraph.shadergraph
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/ReflectedMat.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Orange.mat
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Materials/Cyan.mat
+Dependencies: []

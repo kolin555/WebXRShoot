@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2735840271
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4506af2140fc8d420a8f70aee0d187d6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d45ef91d5626d4d4ae0a347e9259722d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0af03eecb340eb240abc88e883024e11, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Game/Prefabs/ABPrefabs/interactables.prefab
+Dependencies:
+- D:/Web/VRWebShoot/AssetBundles/WebGL/gen/materials

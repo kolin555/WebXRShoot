@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3959275742
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d99c4b050cd4a78961f3586906b362bb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9ed5c6a99c007b94ba283408e9c70a27
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Game/Prefabs/ABPrefabs/DesertEnvironment.prefab
+Dependencies:
+- D:/Web/VRWebShoot/AssetBundles/StandaloneWindows64/gen/materials

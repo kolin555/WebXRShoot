@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 3857553424
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f8a5590b5f9f9b6d34f5b291b226930
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af2957f34dd45c4e93573bb6709416ee
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 307a736764ebbce44b54d72f8467b6fd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 572910c10080c0945a0ef731ccedc739, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.PostProcessData/ShaderResources
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.PostProcessData/TextureResources
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.ScriptableRendererData/DebugShaderResources
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.StencilStateData
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.UniversalRendererData/ShaderResources
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.XRSystemData/ShaderResources
+Assets:
+- Assets/Game/Scene/New Lighting Settings.lighting
+- Assets/Game/SkyBox.mat
+- Assets/Game/URP/New Universal Render Pipeline Asset_Renderer.asset
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Scenes/Desert/Lightmap-0_comp_light.exr
+- Assets/Game/URP/New Universal Render Pipeline Asset.asset
+- Assets/Samples/WebXR Interactions/0.15.0-preview/Sample Scene/Scenes/Desert/Lightmap-1_comp_light.exr
+Dependencies: []

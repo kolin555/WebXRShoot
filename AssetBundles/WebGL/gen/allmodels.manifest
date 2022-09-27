@@ -1,0 +1,90 @@
+ManifestFileVersion: 0
+CRC: 1250533133
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18296c47a7abee100e9cfc08eeba38da
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ceb76ac6a83dccdc7b05aa60d05a9bf3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 102
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 730f06bebdbf4e6408ec1d50abf0cebb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 74bfe9c8d313cf9458117129f19cd7af, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aca262c5e592ebd4a8ec13a9c7842646, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 580e3dd931df2bd42b042a7e8fde2aa8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 827b0c994cbac4341a7df7918b2a5595, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9f6b70cf8d6f4f94f931699457ea09a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 519f6ee6510174b44bbe9a8a2d3b6a6a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: af324790ee3fdc146bc4538da8751e5b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 296a909385e9ebf4c9860d45e5696738, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d8c4d90294a1624e93fed88ebf25ac0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 138
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Game/Prefabs/FPSText.prefab
+- Assets/LoxodonFramework/BundleExamples/Models/Plane/Plane.prefab
+- Assets/Game/Prefabs/ShootTemplate.prefab
+- Assets/LoxodonFramework/BundleExamples/Models/Green/Green.prefab
+- Assets/LoxodonFramework/BundleExamples/Models/Red/Red.prefab
+- Assets/Game/Prefabs/Ballet.prefab
+- Assets/Game/Prefabs/Pistol 1.prefab
+Dependencies:
+- D:/Web/VRWebShoot/AssetBundles/WebGL/gen/materials
