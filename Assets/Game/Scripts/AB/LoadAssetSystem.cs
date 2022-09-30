@@ -10,7 +10,7 @@ using Object = System.Object;
 
 public class LoadAssetSystem : MonoBehaviour
 {
-
+#if UNITY_WEBGL
     public static LoadAssetSystem Instance;
     
      private IResources resources;
@@ -25,21 +25,27 @@ public class LoadAssetSystem : MonoBehaviour
 
      private List<GameObject> loadedObjs=new List<GameObject>();
      
-        void Start()
-        {
+     IEnumerator Start()
+     {
+         ApplicationContext context = Context.GetApplicationContext();
+
+         while (this.resources == null)
+         {
+             this.resources = context.GetService<IResources>();
+             yield return null;
+         }
+
+         MsgSystem.instance.SendMsg(MsgSystem.resources_ready,null);
+         //this.Load(new string[] { "LoxodonFramework/BundleExamples/Models/Red/Red.prefab", "LoxodonFramework/BundleExamples/Models/Green/Green.prefab" });
+         //this.StartCoroutine(Load2("LoxodonFramework/BundleExamples/Models/Plane/Plane.prefab"));
+     }
 
 
-            //this.Load(new string[] { "LoxodonFramework/BundleExamples/Models/Red/Red.prefab", "LoxodonFramework/BundleExamples/Models/Green/Green.prefab" });
-            //this.StartCoroutine(Load2("LoxodonFramework/BundleExamples/Models/Plane/Plane.prefab"));
-        }
-
-        private void Awake()
-        {
-            Instance = this;
-            ApplicationContext context = Context.GetApplicationContext();
-            this.resources = context.GetService<IResources>();
-
-        }
+     private void Awake()
+     {
+         Instance = this;
+         
+     }
 
         public void LoadLevelAssets(int messageLength,string[] names,Transform[] pos)
         {
@@ -54,7 +60,7 @@ public class LoadAssetSystem : MonoBehaviour
         
         private void AssetLoad(string name,Transform Pos)
         {
-            LoadGameObject(name,Pos,AssetLoadCallBack);
+            this.StartCoroutine(LoadGameObjectAsync(name,Pos,AssetLoadCallBack));
         }
 
         private void AssetLoadCallBack(GameObject obj)
@@ -113,11 +119,41 @@ public class LoadAssetSystem : MonoBehaviour
             //resources.LoadBundle()
         }
         
+        IEnumerator LoadGameObjectAsync1(string name,Transform Pos,Action<GameObject> CallBack)
+        {
+            IProgressResult<float, GameObject> result = resources.LoadAssetAsync<GameObject>(name);
+
+            while (!result.IsDone)
+            {
+                Debug.LogFormat("Progress:{0}%", result.Progress * 100);
+                yield return null;
+            }
+
+            try
+            {
+                if (result.Exception != null)
+                    throw result.Exception;
+                
+                GameObject obj= Instantiate(result.Result,Pos.position,Quaternion.identity);
+                //Debug.Log(obj.name);
+                obj.gameObject.SetActive(false);
+                
+                loadedObjs.Add(obj);
+
+                InitBundleShader(obj);
+                CallBack(obj);
+            }
+            catch (Exception e)
+            {
+                Debug.LogErrorFormat("Load failure.Error:{0}", e);
+            }
+        }
+        
         private void LoadGameObject(string name,Transform Pos,Action<GameObject> CallBack)
         {
             Debug.Log(name);
             GameObject gameObj= resources.LoadAsset<GameObject>("Game/Prefabs/ABPrefabs/" + name + ".prefab");
-            Debug.Log(gameObj);
+            
             //IProgressResult<float, GameObject> result = resources.LoadAssetAsync<GameObject>("Game/Prefabs/ABPrefabs/"+name+".prefab");
             //GameObject gameObj = o as GameObject;
             if(gameObj != null)
@@ -190,8 +226,9 @@ public class LoadAssetSystem : MonoBehaviour
                 obj.gameObject.SetActive(false);
                 
                 loadedObjs.Add(obj);
-
+#if UNITY_EDITOR
                 InitBundleShader(obj);
+#endif
                 CallBack(obj);
                 //AssetLoadCallBack();
             }
@@ -221,4 +258,5 @@ public class LoadAssetSystem : MonoBehaviour
                 renderer.material.shader = material;
             }*/
         }
+#endif
 }

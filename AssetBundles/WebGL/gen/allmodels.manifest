@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1250533133
+CRC: 3120202948
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18296c47a7abee100e9cfc08eeba38da
+    Hash: 5dcad80bd616e755dd064231d5476c10
   TypeTreeHash:
     serializedVersion: 2
     Hash: ceb76ac6a83dccdc7b05aa60d05a9bf3
@@ -80,10 +80,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Game/Prefabs/FPSText.prefab
-- Assets/LoxodonFramework/BundleExamples/Models/Plane/Plane.prefab
 - Assets/Game/Prefabs/ShootTemplate.prefab
-- Assets/LoxodonFramework/BundleExamples/Models/Green/Green.prefab
-- Assets/LoxodonFramework/BundleExamples/Models/Red/Red.prefab
 - Assets/Game/Prefabs/Ballet.prefab
 - Assets/Game/Prefabs/Pistol 1.prefab
 Dependencies:

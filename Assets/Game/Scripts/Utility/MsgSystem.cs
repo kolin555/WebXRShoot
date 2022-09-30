@@ -98,6 +98,8 @@ using Object = System.Object;
         public static string left_gun_shot = "left_gun_shot";
         public static string right_gun_shot = "right_gun_shot";
 
+        public static string resources_ready = "resources_ready";
+        
         public static string getted_level_message = "getted_level_message";
         public static string getted_all_assets = "getted_all_assets";
         [System.Serializable]

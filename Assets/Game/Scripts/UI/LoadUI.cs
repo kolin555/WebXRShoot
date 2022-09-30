@@ -28,6 +28,7 @@ public class LoadUI : MonoBehaviour
     public void LoadAllAbOver(System.Object[] objs)
     {
         Slider.value = 0;
+        gameObject.SetActive(false);
     }
     
 }

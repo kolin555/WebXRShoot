@@ -36,8 +36,8 @@ namespace ShootTower
         {
             //GameStart();
             MsgSystem.instance.RegistMsgAction(MsgSystem.getted_all_assets,LoadLevelAssetsOver);
-            
-            LoadLevelAsset();
+            MsgSystem.instance.RegistMsgAction(MsgSystem.resources_ready, LoadLevelAsset);
+            //LoadLevelAsset();
             TryOpenLoadUI();
             
             
@@ -81,13 +81,13 @@ namespace ShootTower
         public void GoNextLevel()
         {
             level += 1;
-            LoadLevelAsset();
+            LoadLevelAsset(null);
             TryOpenLoadUI();
         }
         
         
         
-        private void LoadLevelAsset()
+        private void LoadLevelAsset(System.Object[] objects)
         {
             
             if (LevelMessageSystem.Instance != null)

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3792112243
+CRC: 2809636975
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1c9067db841469019c7b2915fe8e5211
+    Hash: 5a1708e45b60469e999f016cd5083a1a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4db82f4e618e4630b2fa8228e9c6d8d1
@@ -25,7 +25,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Game/Prefabs/ABPrefabs/Cube.prefab
 - Assets/Game/Prefabs/ABPrefabs/TestTower.prefab
 Dependencies:
 - D:/Web/VRWebShoot/AssetBundles/WebGL/gen/materials
